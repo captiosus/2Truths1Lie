@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>2 Truths and a Lie</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Mina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+  <body>
+    <div id="cover"></div>
+    <div id="title-screen" class="screen">
+      <h1 id="title">2 Truths and a Lie</h1>
+      <p id="description"></p>
+      <button type="button" id="start">Intro</button>
+    </div>
+    <div id="title-video" class="screen">
+      <div id="title-video-cover" class="video-cover"></div>
+      <div id="title-video-skip">
+        <i class="material-icons">skip_next</i>
+      </div>
+      <div class="video-actions">
+        <div id="title-video-play" class="video-action">
+          <i class="material-icons">play_arrow</i>
+        </div>
+        <div id="title-video-replay" class="video-action">
+          <i class="material-icons">replay</i>
+        </div>
+        <div id="title-video-continue" class="video-action">
+          <i class="material-icons">arrow_forward</i>
+        </div>
+      </div>
+      <video id="title-video-video" src="video/Intro.mp4"></video>
+    </div>
+    <div id="video-screen" class="screen">
+      <h1 id="banner">Can You Spot The Lies?</h1>
+      <div id="score">0</div>
+      <div id="selection"></div>
+      <button type="button" id="review-button">Review</button>
+      <div id="choice" class="popup">
+        <div id="choice-video-container">
+          <button type="button" id="choice-close" class="close-popup">
+            <i class="material-icons">close</i>
+          </button>
+          <div id="choice-video-cover" class="video-cover"></div>
+          <div class="video-actions">
+            <div id="choice-video-play" class="video-action">
+              <i class="material-icons">play_arrow</i>
+            </div>
+            <div id="choice-video-replay" class="video-action">
+              <i class="material-icons">replay</i>
+            </div>
+          </div>
+          <video id="choice-video"></video>
+        </div>
+        <div id="choice-answers">
+          <span class="choice-answer">1</span>
+          <span class="choice-answer">2</span>
+          <span class="choice-answer">3</span>
+        </div>
+      </div>
+    </div>
+    <div id="answer" class="popup">
+      <button type="button" id="answer-close" class="close-popup">x</button>
+      <h1 id="answer-correct"></h1>
+      <div id="answer-video-container">
+        <div id="answer-video-cover" class="video-cover"></div>
+        <div class="video-actions">
+          <div id="answer-video-play" class="video-action">
+            <i class="material-icons">play_arrow</i>
+          </div>
+          <div id="answer-video-replay" class="video-action">
+            <i class="material-icons">replay</i>
+          </div>
+        </div>
+        <video id="answer-video"></video>
+      </div>
+      <div id="answer-container">
+        <h1 id="answer-title"></h1>
+        <p id="answer-number"></p>
+        <p id="answer-description"></p>
+      </div>
+    </div>
+    <div id="review" class="screen">
+      <div id="review-container"></div>
+    </div>
+  </body>
+  <script src="js/title.js"></script>
+  <script src="js/video.js"></script>
+</html>
